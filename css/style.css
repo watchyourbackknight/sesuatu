@@ -54,6 +54,65 @@ blockquote.left {
     position: relative;
 }
 
+/* adam */
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom:56.25%;
+  /* padding-top:30px; */
+  height:100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100vh;
+  transform: translate3d(-30%,0%,0);
+}
+
+.video-container figcaption {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+
+.video-container figcaption h1,
+.video-container figcaption h3,
+.video-container figcaption h4 {
+  color: #fff;
+}
+
+
+.video-container figcaption .wrapper {
+  padding: 0 15%;
+  position: relative;
+}
+
+@media screen and (min-width: 801px){
+  .video-container {
+    position:relative;
+    padding-bottom: 56.25%;
+    padding-top:0;
+    height:100vh;
+  }
+
+  .video-container video {
+    position:absolute;
+    top:0;
+    left:0;
+    width: auto;
+    height:100%;
+    transform: translate3d(-25%,-25%,0);
+  }
+}
+/* end adam */
+
 
 .img_container, .color_conatiner {
   height: 100vh; /* this sets the height of each full width image section to that of the viewport.*/
@@ -75,8 +134,8 @@ blockquote.left {
 .video_container header {
   position: absolute;
   text-align: center;
-height: 100vh;
-width: 100%;
+  height: 100vh;
+  width: 100%;
   top: 0;
 }
 
@@ -104,7 +163,7 @@ width: 100%;
   text-indent: -9999px;
   margin: auto;
   position: absolute;
-  bottom: 44px;
+  bottom: -90px;
   left: 50%;
   transform: translateX(-50%);
   image-s
